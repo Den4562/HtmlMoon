@@ -1,0 +1,262 @@
+body{
+    background-image: url(/image/space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    overflow: hidden;
+}
+
+.moon{
+    top: 0;
+    left: 0;
+    margin-left: 550px;
+    margin-top: 200px;
+    position: absolute;
+    animation-name: moon;
+    animation-duration: 100s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 1;
+   
+    
+}
+
+
+
+
+
+.meteor{
+   
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: -100px; /* Начальное положение */
+    margin-top: 500px;
+    animation-duration: 1.5s;
+    animation-name: meteorMove;
+    animation-timing-function: linear;
+    animation-iteration-count:inherit;
+    animation-delay: 7s;
+    
+}
+
+
+.meteor:nth-child(1){
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: -100px; /* Начальное положение */
+    margin-top: 500px;
+    animation-duration: 1.5s;
+    animation-name: meteorMove;
+    animation-timing-function: linear;
+    animation-iteration-count:inherit;
+    animation-delay: 7s;
+}
+
+.meteor:nth-child(2){
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: -100px; /* Начальное положение */
+    margin-top: 300px;
+    animation-duration: 2s;
+    animation-name: meteorMove2;
+    animation-timing-function: linear;
+    animation-iteration-count: inherit;
+    z-index: 0;
+    animation-delay: 9s;
+}
+
+.meteor:nth-child(3){
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: -100px; /* Начальное положение */
+    margin-top: 500px;
+    animation-duration: 1.5s;
+    animation-name: meteorMove3;
+    animation-timing-function: linear;
+    animation-iteration-count:inherit;
+    animation-delay: 18s;
+}
+
+.meteor:nth-child(4){
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: -100px; /* Начальное положение */
+    margin-top: 300px;
+    animation-duration: 2s;
+    animation-name: meteorMove4;
+    animation-timing-function: linear;
+    animation-iteration-count: inherit;
+    z-index: 0;
+    animation-delay: 21s;
+}
+
+.meteor:nth-child(5){
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: -100px; 
+    margin-top: 500px;
+    animation-duration: 8s;
+    animation-name: meteorMove5;
+    animation-timing-function: linear;
+    animation-iteration-count:inherit;
+    animation-delay: 24s;
+}
+
+
+.meteor:nth-child(6){
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: -100px; 
+    margin-top: 300px;
+    animation-duration: 12s;
+    animation-name: meteorMove6;
+    animation-timing-function: linear;
+    animation-iteration-count: inherit;
+    z-index: 0;
+    animation-delay: 31s;
+    z-index: 1;
+}
+
+.meteor:nth-child(7){
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: -100px; 
+    margin-top: 500px;
+    animation-duration: 1.5s;
+    animation-name: meteorMove7;
+    animation-timing-function: linear;
+    animation-iteration-count:inherit;
+    animation-delay: 34s;
+}
+
+.meteor:nth-child(8){
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: -100px; /* Начальное положение */
+    margin-top: 300px;
+    animation-duration: 2s;
+    animation-name: meteorMove8;
+    animation-timing-function: ease-in;
+    animation-iteration-count: inherit;
+    z-index: 0;
+    animation-delay: 35.8s;
+}
+
+
+
+
+
+@keyframes moon{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes meteorMove {
+    0% {
+        margin-left: 200px; 
+        margin-top: 1000px; 
+    }
+    100% {
+        margin-left: calc(100vw + 60px); 
+        margin-top: 500px; 
+    }
+}
+
+@keyframes meteorMove2 {
+    0% {
+        
+        margin-left: -100px; 
+        
+    }
+    100% {
+        margin-left: calc(100vw + 60px); 
+        
+    }
+}
+
+@keyframes meteorMove3 {
+    0% {
+        margin-left: 200px; 
+        margin-top: 1000px; 
+    }
+    100% {
+        margin-left: calc(100vw + 60px); 
+        margin-top: 500px;
+    }
+}
+
+
+@keyframes meteorMove4 {
+    0% {
+        
+        margin-left: -100px; 
+        
+    }
+    100% {
+        margin-left: calc(100vw + 60px); 
+        
+    }
+}
+
+@keyframes meteorMove5 {
+    0% {
+        margin-left: 800px; 
+        margin-top: 1000px; 
+    }
+    100% {
+        margin-left: calc(100vw + 60px); 
+        margin-top: 500px; 
+    }
+}
+
+@keyframes meteorMove6 {
+    0% {
+        transform: rotate(0deg);
+        margin-left: -100px; 
+        
+    }
+    100% {
+        margin-left: calc(100vw + 60px);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes meteorMove7 {
+    0% {
+        margin-left: 200px; 
+        margin-top: 1000px; 
+    }
+    100% {
+        margin-left: calc(100vw + 60px); 
+        margin-top: 500px; 
+    }
+}
+
+@keyframes meteorMove8 {
+    0% {
+        
+        margin-left: -100px; 
+        
+    }
+    100% {
+        margin-left: calc(100vw + 60px); 
+        
+    }
+}
